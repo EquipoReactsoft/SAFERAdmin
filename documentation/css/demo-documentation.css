@@ -397,7 +397,7 @@ body{
 }
 
 .navigation-example{
-    background-image: url('../img/bg.jpg');
+    /* background-image: url('../img/bg.jpg'); */
     background-position: center center;
     background-size: cover;
     margin-top:0;
