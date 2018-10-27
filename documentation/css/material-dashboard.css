@@ -9431,12 +9431,21 @@ button:focus {
     display: none; }
 
 .carousel.carousel-full-nagivation .left {
+<<<<<<< HEAD
   /* cursor: url("../img/arrow-left.png"), url("../img/arrow-left.cur"), default !important; */ 
 }
 
 .carousel.carousel-full-nagivation .right {
   /* cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important;  */
 }
+=======
+  /* cursor: url("../img/arrow-left.png"), url("../img/arrow-left.cur"), default !important;  */
+  }
+
+.carousel.carousel-full-nagivation .right {
+  /* cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important; */
+  }
+>>>>>>> refs/remotes/origin/master
 
 .carousel .carousel-control {
   height: 15%;
