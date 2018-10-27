@@ -38,7 +38,7 @@ import {
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
-    LoginComponent
+    // LoginComponent
   ]
 })
 

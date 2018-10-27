@@ -26,6 +26,7 @@
     "@angular/platform-server": "7.0.1",
     "@angular/router": "7.0.1",
     "ajv": "6.5.4",
+    "angularfire2": "^5.1.0",
     "arrive": "2.4.1",
     "bootstrap": "4.1.3",
     "bootstrap-material-design": "4.1.1",
@@ -33,6 +34,7 @@
     "chartist": "0.11.0",
     "classlist.js": "1.1.20150312",
     "core-js": "2.5.7",
+    "firebase": "^5.5.6",
     "googleapis": "34.0.0",
     "hammerjs": "2.0.8",
     "jquery": "3.3.1",
@@ -40,9 +42,9 @@
     "perfect-scrollbar": "1.4.0",
     "popper.js": "1.14.4",
     "rxjs": "6.3.3",
+    "rxjs-compat": "^6.0.0-rc.0",
     "web-animations-js": "2.3.1",
-    "zone.js": "0.8.26",
-    "rxjs-compat": "^6.0.0-rc.0"
+    "zone.js": "0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
@@ -67,5 +69,16 @@
     "ts-node": "7.0.1",
     "tslint": "5.11.0",
     "typescript": "3.1.3"
-  }
+  },
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EquipoReactsoft/SAFERAdmin.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/EquipoReactsoft/SAFERAdmin/issues"
+  },
+  "homepage": "https://github.com/EquipoReactsoft/SAFERAdmin#readme",
+  "description": ""
 }
