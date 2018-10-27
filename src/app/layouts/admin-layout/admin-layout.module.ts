@@ -19,6 +19,9 @@ import {
   MatRippleModule,
   MatTooltipModule,
 } from '@angular/material';
+import { HorarioComponent } from 'app/horario/horario.component';
+import { PersonalComponent } from 'app/personal/personal.component';
+import { IncidenciaComponent } from 'app/incidencia/incidencia.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -38,7 +41,10 @@ import {
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
-    LoginComponent
+    LoginComponent,
+    HorarioComponent,
+    PersonalComponent,
+    IncidenciaComponent
   ]
 })
 

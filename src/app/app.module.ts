@@ -22,6 +22,9 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { HorarioComponent } from './horario/horario.component';
+import { PersonalComponent } from './personal/personal.component';
+import { IncidenciaComponent } from './incidencia/incidencia.component';
 
 @NgModule({
   imports: [
@@ -37,7 +40,10 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    HorarioComponent,
+    PersonalComponent,
+    IncidenciaComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
