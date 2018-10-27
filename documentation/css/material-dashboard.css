@@ -9438,6 +9438,10 @@ button:focus {
   /* cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important;  */
 }
 
+.carousel.carousel-full-nagivation .right {
+  /* cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important; */
+  }
+
 .carousel .carousel-control {
   height: 15%;
   margin: auto; }
@@ -12678,8 +12682,8 @@ h2.title {
       background-color: rgba(80, 80, 80, 0.7);
       border-radius: 15px;
       margin-right: 15px;
-      -webkit-transition: background 0.3s ease;
-      transition: background 0.3s ease;
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
       vertical-align: middle; }
     .togglebutton label .toggle:after {
       content: "";
@@ -12694,10 +12698,10 @@ h2.title {
       left: -5px;
       top: -2.5px;
       border: 1px solid rgba(0,0,0, .54);
-      -webkit-transition: left 0.3s ease, background 0.3s ease, -webkit-box-shadow 0.1s ease;
-      transition: left 0.3s ease, background 0.3s ease, -webkit-box-shadow 0.1s ease;
-      transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
-      transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease, -webkit-box-shadow 0.1s ease; }
+      -webkit-transition: left 0.3s ease, 0.3s ease, -webkit-box-shadow 0.1s ease;
+      transition: left 0.3s ease, 0.3s ease, -webkit-box-shadow 0.1s ease;
+      transition: left 0.3s ease, 0.3s ease, box-shadow 0.1s ease;
+      transition: left 0.3s ease, 0.3s ease, box-shadow 0.1s ease, -webkit-box-shadow 0.1s ease; }
     .togglebutton label input[type=checkbox][disabled] + .toggle:after,
     .togglebutton label input[type=checkbox][disabled]:checked + .toggle:after {
       background-color: #BDBDBD; }

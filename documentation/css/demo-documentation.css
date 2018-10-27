@@ -397,7 +397,11 @@ body{
 }
 
 .navigation-example{
+<<<<<<< HEAD
     /*background-image: url('../img/bg.jpg');*/
+=======
+    /* background-image: url('../img/bg.jpg'); */
+>>>>>>> refs/remotes/origin/master
     background-position: center center;
     background-size: cover;
     margin-top:0;

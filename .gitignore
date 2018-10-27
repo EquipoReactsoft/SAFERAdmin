@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /node_modules
 
 /.vscode/settings.json
@@ -36752,3 +36753,36 @@
 /package-lock.json
 /package.json
 /package-lock.json
+=======
+.DS_STORE
+
+/dist/
+bazel-*
+e2e_test.*
+node_modules
+bower_components
+tools/gulp-tasks/cldr/cldr-data/
+
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.settings/
+*.swo
+modules/.settings
+.vscode
+modules/.vscode
+
+# Don't check in secret files
+*secret.js
+
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log
+
+# build-analytics
+.build-analytics
+
+# rollup-test output
+/modules/rollup-test/dist/
+>>>>>>> 8f8aaa7e17bcfd82ba315a3ece3bebcac189d6f1

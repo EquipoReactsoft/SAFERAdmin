@@ -22,9 +22,13 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+<<<<<<< HEAD
 import { HorarioComponent } from './horario/horario.component';
 import { PersonalComponent } from './personal/personal.component';
 import { IncidenciaComponent } from './incidencia/incidencia.component';
+=======
+import { LoginComponent } from './login/login.component';
+>>>>>>> 8f8aaa7e17bcfd82ba315a3ece3bebcac189d6f1
 
 @NgModule({
   imports: [
@@ -41,9 +45,13 @@ import { IncidenciaComponent } from './incidencia/incidencia.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+<<<<<<< HEAD
     HorarioComponent,
     PersonalComponent,
     IncidenciaComponent
+=======
+    LoginComponent
+>>>>>>> 8f8aaa7e17bcfd82ba315a3ece3bebcac189d6f1
   ],
   providers: [],
   bootstrap: [AppComponent]

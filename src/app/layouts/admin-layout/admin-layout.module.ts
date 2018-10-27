@@ -41,10 +41,14 @@ import { IncidenciaComponent } from 'app/incidencia/incidencia.component';
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
+<<<<<<< HEAD
     LoginComponent,
     HorarioComponent,
     PersonalComponent,
     IncidenciaComponent
+=======
+    // LoginComponent
+>>>>>>> 8f8aaa7e17bcfd82ba315a3ece3bebcac189d6f1
   ]
 })
 
