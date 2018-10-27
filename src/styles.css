@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+    color: inherit;
+    background-color: transparent;
+  }
+  
+  .navbar.navbar-transparent {
+    background-color: rgb(74, 223, 74);
+    box-shadow: none;
+    color: #fff;
+    padding-top: 25px;
+  }

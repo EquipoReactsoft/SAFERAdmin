@@ -397,7 +397,7 @@ body{
 }
 
 .navigation-example{
-    background-image: url('../img/bg.jpg');
+    /*background-image: url('../img/bg.jpg');*/
     background-position: center center;
     background-size: cover;
     margin-top:0;
@@ -800,11 +800,11 @@ body{
 }
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
   color: inherit;
-  background-color: transparent;
+  background-color: red;
 }
 
 .navbar.navbar-transparent {
-  background-color: transparent;
+  background-color: #e91e63;
   box-shadow: none;
   color: #fff;
   padding-top: 25px;
@@ -873,10 +873,10 @@ footer.footer-documentation li a{
     color: inherit;
 }
 
-footer.footer-documentation li a:hover,
+/* footer.footer-documentation li a:hover,
 footer.footer-documentation li a:focus{
-    color: #89229b;
-}
+    color: #7ec189;
+} */
 
 footer ul {
   margin-bottom: 0;

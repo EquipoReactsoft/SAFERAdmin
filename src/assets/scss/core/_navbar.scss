@@ -151,9 +151,9 @@
     &.bg-dark{
         @include navbar-colors($grey-900, $white-color);
     }
-
+/*buscar here*/
     &.navbar-transparent{
-        background-color: transparent !important;
+        background-color: #f44336 !important;
         box-shadow: none;
         padding-top: 25px;
 
