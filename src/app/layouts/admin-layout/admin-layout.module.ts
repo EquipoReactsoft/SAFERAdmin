@@ -11,7 +11,6 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
-import { LoginComponent } from 'app/login/login.component';
 
 import {
   MatButtonModule,
@@ -19,6 +18,9 @@ import {
   MatRippleModule,
   MatTooltipModule,
 } from '@angular/material';
+import { HorarioComponent } from 'app/horario/horario.component';
+import { PersonalComponent } from 'app/personal/personal.component';
+import { IncidenciaComponent } from 'app/incidencia/incidencia.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -38,7 +40,9 @@ import {
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
-    // LoginComponent
+    HorarioComponent,
+    PersonalComponent,
+    IncidenciaComponent
   ]
 })
 
