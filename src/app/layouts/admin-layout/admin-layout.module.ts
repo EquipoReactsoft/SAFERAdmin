@@ -11,7 +11,6 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
-import { LoginComponent } from 'app/login/login.component';
 
 import {
   MatButtonModule,
@@ -41,14 +40,9 @@ import { IncidenciaComponent } from 'app/incidencia/incidencia.component';
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
-<<<<<<< HEAD
-    LoginComponent,
     HorarioComponent,
     PersonalComponent,
     IncidenciaComponent
-=======
-    // LoginComponent
->>>>>>> 8f8aaa7e17bcfd82ba315a3ece3bebcac189d6f1
   ]
 })
 
