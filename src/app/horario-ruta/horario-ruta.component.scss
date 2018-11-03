@@ -1,0 +1,36 @@
+.card .card-header-danger {
+    background: #95D5A0;
+}
+.card .card-title, h4 {
+    color: #636363;
+}
+.card .card-category{
+    color: #747474;
+    font-size: 16px;
+}
+.btn.btn-danger:focus, .btn.btn-danger.focus, .btn.btn-danger:hover {
+    background-color: #7ec189;
+    border-color: #7ec189;
+}
+.btn.btn-danger:active:hover, .btn.btn-danger:active:focus, 
+.btn.btn-danger:active.focus, .btn.btn-danger.active:hover, 
+.btn.btn-danger.active:focus, .btn.btn-danger.active.focus, .open > 
+.btn.btn-danger.dropdown-toggle:hover, .open > .btn.btn-danger.dropdown-toggle:focus, 
+.open > .btn.btn-danger.dropdown-toggle.focus, .show > 
+.btn.btn-danger.dropdown-toggle:hover, .show > 
+.btn.btn-danger.dropdown-toggle:focus, .show > 
+.btn.btn-danger.dropdown-toggle.focus {
+    color: #fff;
+    background-color: #3a8385b0;
+    border-color: #3a8385b0;
+}
+.modal-dialog .modal-header {
+    background-color: #7ec189;
+    padding-left: 10px;
+}
+.modal-dialog .modal-header .modal-title {
+    text-align: left;
+}
+.modal-dialog .modal-footer button {
+    margin-right: 10px;
+}

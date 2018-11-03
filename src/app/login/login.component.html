@@ -1,52 +1,22 @@
 <div class="fondo">
-    <div class="container-fluid">
-        <div class="login-wrapper row">
-            <div id="login" class="login loginpage col-lg-offset-4 col-md-offset-3 col-sm-offset-3 col-xs-offset-0 col-xs-12 col-sm-6 col-lg-4">
-                <h1 style="text-align:center;">
-                    <img class="img" src="../assets/img/LOGO_6.svg" />
-                </h1>
-                <form name="loginform" id="loginform" method="">
-                    <p>
-                        <label for="user_login">Usuario</label>
-                        <input type="text" id="" class="form-control" placeholder="Ingrese su usuario" />
-                    </p>
-                    <p>
-                        <label for="user_pass">Password</label>
-                        <input type="password" id="" class="form-control" placeholder="Ingrese su password" />
-                    </p>
-                    <p class="submit">
-                        <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block" value="Acceder" />
-                    </p>
-                </form>
-            </div>
-        </div>
-    </div>
-    <footer class="footer ">
-        <div class="container-fluid">
-            <div class="copyright pull-right">
-                &copy;
-                2018, made with love by
-                <a href="https://www.reactsoft.com" target="_blank">ReactSoft</a> for a better world.
-            </div>
-        </div>
-    </footer>
   <div class="container-fluid">
     <div class="login-wrapper row">
         <div id="login" class="login loginpage col-lg-offset-4 col-md-offset-3 col-sm-offset-3 col-xs-offset-0 col-xs-12 col-sm-6 col-lg-4">
             <h1 style="text-align:center;">
               <img class="img" src="../assets/img/LOGO_6.svg" />
             </h1>
-            <form name="loginform" id="loginform" method="">
+             <label class="myLabel"><strong>SAFER</strong></label>
+            <form name="loginform" id="loginform" (ngSubmit)="submit();">
                 <p>
                     <label for="user_login">Usuario</label>
-                    <input type="text" id="" class="form-control" placeholder="Ingresar usuario"/>
+                    <input type="text" id="txtUsuario" class="form-control" placeholder="Ingresar usuario"/>
                 </p>
                 <p>
                     <label for="user_pass">Contraseña</label>
-                    <input type="password" id="" class="form-control" placeholder="Ingresar Contraseña"/>
+                    <input type="password" id="txtContrasena" class="form-control" placeholder="Ingresar Contraseña"/>
                 </p>
                 <p class="submit">
-                    <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block" value="Acceder" />
+                    <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block" value="Acceder"/>
                 </p>
             </form>
         </div>

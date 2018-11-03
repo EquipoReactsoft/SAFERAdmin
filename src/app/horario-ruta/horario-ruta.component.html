@@ -1,0 +1,144 @@
+<div class="container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="margin-top: 100px;">
+                    <div class="card-header card-header-danger">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="card-title ">Horario</h4>
+                                <p class="card-category">Turno: Mañana</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-category float pull-left" style="padding-top: 25px;">Horario:</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class=" text-primary">
+                                    <th>
+                                        Rutas
+                                    </th>
+                                    <th>
+
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Ruta 01
+                                        </td>
+                                        <td>
+                                            <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                                data-toggle="modal" data-target="#modalUnidad"><i class="fa fa-truck"></i>&nbsp;&nbsp;Consultar
+                                                Unidades</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ruta 02
+                                        </td>
+                                        <td>
+                                            <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                                data-toggle="modal" data-target="#modalUnidad"><i class="fa fa-truck"></i>&nbsp;&nbsp;Consultar
+                                                Unidades</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ruta 03
+                                        </td>
+                                        <td>
+                                            <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                                data-toggle="modal" data-target="#modalUnidad"><i class="fa fa-truck"></i>&nbsp;&nbsp;Consultar
+                                                Unidades</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalUnidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title float pull-left" id="exampleModalLabel"><i class="fa fa-truck"></i>&nbsp;&nbsp;Consultar 
+                        Unidades</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class=" text-primary">
+                                <th>
+                                    Ruta
+                                </th>
+                                <th>
+                                    Unidades
+                                </th>
+                                <th>
+
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Ruta 01
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-truck"></i> Unidad 01
+                                    </td>
+                                    <td>
+                                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                            data-toggle="modal" data-target=""><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ruta 01
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-truck"></i> Unidad 02
+                                    </td>
+                                    <td>
+                                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                            data-toggle="modal" data-target=""><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ruta 01
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-truck"></i> Unidad 03
+                                    </td>
+                                    <td>
+                                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                            data-toggle="modal" data-target=""><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <button mat-raised-button type="button" class="btn btn-secondary pull-right" data-dismiss="modal"><i
+                                class="fa fa-times-circle-o"></i>&nbsp;&nbsp;Cerrar</button>
+                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

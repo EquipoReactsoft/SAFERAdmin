@@ -31,10 +31,10 @@ img{
     margin-left:auto;
     margin-right:auto;
 }
-/*.loginpage input[type=text] {
-    border: 1px solid #99bacb !important;
+.myLabel {
+    color: #213650;
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: 30px;
 }
-footer.footer-documentation li a:hover,
-footer.footer-documentation li a:focus{
-    color: #7ec189 !important;
-}*/

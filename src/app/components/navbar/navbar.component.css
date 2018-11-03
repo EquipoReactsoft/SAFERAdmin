@@ -1,6 +1,7 @@
-.navbar.navbar-transparent {
-    background-color: rgb(74, 223,74);
-    box-shadow: none;
-    color: #fff;
-    padding-top: 25px;
+  .navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: #213650;
   }
+  .dropdown-menu .dropdown-item, .dropdown-menu li > a {
+    color: #213650;
+  }
+  

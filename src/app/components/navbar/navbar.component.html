@@ -1,9 +1,9 @@
 <style type="text/css" src="C:\Users\ASUS\Documents\Proyecto de Tesis\SAFERAdmin\src\app\components\navbar\navbar.component.css"></style>
-<nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top" style="color: darkgray">
+<nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top" >
     <div class="container-fluid">
-        <div class="navbar-wrapper">
+        <!-- <div class="navbar-wrapper">
           <a class="navbar-brand" href="#">{{getTitle()}}</a>
-        </div>
+        </div> -->
         <button mat-raised-button class="navbar-toggler" type="button" (click)="sidebarToggle()">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
@@ -18,7 +18,7 @@
                         <span class="notification">5</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Mike John responded to your email</a>
+                        <a class="dropdown-item">Mike John responded to your email</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -29,8 +29,8 @@
                         </p>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuUser">
-                        <a class="dropdown-item" href="#"><i class="fa fa-pencil"></i>&nbsp; Cambiar Password</a>
-                        <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>&nbsp; Log Out</a>
+                        <a class="dropdown-item" ><i class="fa fa-pencil"></i>&nbsp; Cambiar Password</a>
+                        <a class="dropdown-item" href=" "><i class="fa fa-sign-out"></i>&nbsp; Log Out</a>
                     </div>
                 </li>
             </ul>

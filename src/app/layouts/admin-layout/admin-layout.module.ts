@@ -21,6 +21,7 @@ import {
 import { HorarioComponent } from 'app/horario/horario.component';
 import { PersonalComponent } from 'app/personal/personal.component';
 import { IncidenciaComponent } from 'app/incidencia/incidencia.component';
+import { HorarioRutaComponent } from 'app/horario-ruta/horario-ruta.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -42,7 +43,8 @@ import { IncidenciaComponent } from 'app/incidencia/incidencia.component';
     UpgradeComponent,
     HorarioComponent,
     PersonalComponent,
-    IncidenciaComponent
+    IncidenciaComponent,
+    HorarioRutaComponent
   ]
 })
 

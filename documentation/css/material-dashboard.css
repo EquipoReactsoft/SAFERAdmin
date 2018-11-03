@@ -7659,15 +7659,15 @@ button:focus {
     color: #fff;
     background-color: #95D5A0;
     border-color: #95D5A0;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12);
-            box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12); }
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 255, 55, 0.14), 0 3px 1px -2px rgba(35, 213, 86, 0.2), 0 1px 5px 0 rgba(0, 221, 87, 0.18);
+            box-shadow: 0 2px 2px 0 rgba(0, 255, 55, 0.14), 0 3px 1px -2px rgba(35, 213, 86, 0.2), 0 1px 5px 0 rgba(0, 221, 87, 0.18); }
     .btn.btn-danger:hover {
       color: #fff;
-      background-color: #f33527;
+      background-color: #27f353;
       border-color: #e11b0c; }
     .btn.btn-danger:focus, .btn.btn-danger.focus, .btn.btn-danger:hover {
       color: #fff;
-      background-color: #f33527;
+      background-color: #27f331;
       border-color: #e11b0c; }
     .btn.btn-danger:active, .btn.btn-danger.active,
     .open > .btn.btn-danger.dropdown-toggle,
@@ -7675,8 +7675,8 @@ button:focus {
       color: #fff;
       background-color: #f33527;
       border-color: #e11b0c;
-      -webkit-box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12);
-              box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12); }
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 255, 55, 0.14), 0 3px 1px -2px rgba(35, 213, 86, 0.2), 0 1px 5px 0 rgba(0, 221, 87, 0.18);
+              box-shadow: 0 2px 2px 0 rgba(0, 255, 55, 0.14), 0 3px 1px -2px rgba(35, 213, 86, 0.2), 0 1px 5px 0 rgba(0, 221, 87, 0.18); }
       .btn.btn-danger:active:hover, .btn.btn-danger:active:focus, .btn.btn-danger:active.focus, .btn.btn-danger.active:hover, .btn.btn-danger.active:focus, .btn.btn-danger.active.focus,
       .open > .btn.btn-danger.dropdown-toggle:hover,
       .open > .btn.btn-danger.dropdown-toggle:focus,
@@ -7699,8 +7699,8 @@ button:focus {
       background-color: #95D5A0;
       border-color: #95D5A0; }
     .btn.btn-danger:focus, .btn.btn-danger:active, .btn.btn-danger:hover {
-      -webkit-box-shadow: 0 14px 26px -12px rgba(244, 67, 54, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
-              box-shadow: 0 14px 26px -12px rgba(244, 67, 54, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2); }
+      -webkit-box-shadow: 0 14px 26px -12px rgba(244, 67, 54, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(35, 213, 86, 0.2);
+              box-shadow: 0 14px 26px -12px rgba(244, 67, 54, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(35, 213, 86, 0.2); }
     .btn.btn-danger.btn-link {
       background-color: transparent;
       color: #95D5A0;
@@ -11565,8 +11565,8 @@ fieldset[disabled] .form-group .form-control {
 .pagination.pagination-danger > .page-item.active > span:hover {
   background-color: #95D5A0;
   border-color: #95D5A0;
-  -webkit-box-shadow: 0 4px 5px 0 rgba(244, 67, 54, 0.14), 0 1px 10px 0 rgba(244, 67, 54, 0.12), 0 2px 4px -1px rgba(244, 67, 54, 0.2);
-          box-shadow: 0 4px 5px 0 rgba(244, 67, 54, 0.14), 0 1px 10px 0 rgba(244, 67, 54, 0.12), 0 2px 4px -1px rgba(244, 67, 54, 0.2); }
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 255, 55, 0.14), 0 1px 10px 0 rgba(0, 221, 87, 0.18), 0 2px 4px -1px rgba(35, 213, 86, 0.2);
+          box-shadow: 0 4px 5px 0 rgba(0, 255, 55, 0.14), 0 1px 10px 0 rgba(0, 221, 87, 0.18), 0 2px 4px -1px rgba(35, 213, 86, 0.2); }
 
 .nav-pills:not(.flex-column) .nav-item + .nav-item:not(:first-child) {
   margin-left: 5px; }
@@ -12648,7 +12648,7 @@ h2.title {
   .progress.progress-line-warning {
     background: rgba(255, 152, 0, 0.2); }
   .progress.progress-line-danger {
-    background: rgba(244, 67, 54, 0.2); }
+    background: rgba(35, 213, 86, 0.2); }
 
 .togglebutton {
   vertical-align: middle; }
@@ -12934,10 +12934,10 @@ h2.title {
       -webkit-box-shadow: none;
               box-shadow: none; }
     .sidebar .nav li.active > [data-toggle="collapse"] i {
-      color: #a9afbb; }
+      color: #636363; }
     .sidebar .nav li.active > a,
     .sidebar .nav li.active > a i {
-      color: #fff; }
+      color: #213650; }
     .sidebar .nav li.separator {
       margin: 15px 0; }
       .sidebar .nav li.separator:after {
@@ -12964,7 +12964,7 @@ h2.title {
       line-height: 30px;
       width: 30px;
       text-align: center;
-      color: #a9afbb; }
+      color: #636363; }
   .sidebar .nav li a,
   .sidebar .nav li .dropdown-menu a {
     margin: 10px 15px 0;

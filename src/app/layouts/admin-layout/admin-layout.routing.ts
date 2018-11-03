@@ -10,6 +10,7 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { HorarioComponent } from 'app/horario/horario.component';
 import { PersonalComponent } from 'app/personal/personal.component';
 import { IncidenciaComponent } from 'app/incidencia/incidencia.component';
+import { HorarioRutaComponent } from 'app/horario-ruta/horario-ruta.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -64,5 +65,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'horario',        component: HorarioComponent },
     { path: 'personal',        component: PersonalComponent },
-    { path: 'incidencia',        component: IncidenciaComponent }
+    { path: 'incidencia',        component: IncidenciaComponent },
+    { path: 'horario-ruta',        component: HorarioRutaComponent }
 ];
