@@ -1,44 +1,181 @@
 <div class="container">
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card" style="margin-top: 100px;">
-                <div class="card-header card-header-danger">
-                    <h4 class="card-title">Personal</h4>
-                    <p class="card-category">Verificar Personal</p>
-                </div>
-                <div class="card-body">
-                    <form>
-                        <div class="row">
-                          <div class="col-md-2">
-                                <label for="selec_turno" style="
-                                padding-top: 12px;">Seleccione una Zona:</label>
-                          </div>
-                          <div class="col-md-4">
-                              <select name="cboTurno" class="form-control">
-                                  <option value="manana">Mañana</option>
-                                  <option value="tarde">Tarde</option>
-                                  <option value="noche">Noche</option>
-                                </select>
-                          </div>
-                          <div class="col-md-2">
-                              <label for="selec_turno" style="
-                              padding-top: 12px;">Seleccione un Horario:</label>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="margin-top: 100px;">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Personal</h4>
+                        <p class="card-category">Verificar Personal</p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="selec_zona" style="
+                                padding-top: 12px;">Seleccione
+                                        una Zona:</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <select name="cboZona" class="form-control">
+                                        <option value="">Pamplona Alta</option>
+                                        <option value="">Pamplona Baja</option>
+                                        <option value="">Zona Urbana - Cercado</option>
+                                        <option value="">Maria Auxiliadora</option>
+                                        <option value="">Pampas de San Juan</option>
+                                        <option value="">Panamericana Sur</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="selec_horario" style="
+                              padding-top: 12px;">Seleccione
+                                        un Horario:</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <select name="cboHorario" class="form-control">
+                                        <option value="">8:00 AM - 12:30 PM</option>
+                                        <option value="">2:00 PM - 5:30 PM</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                              <select name="cboTurno" class="form-control">
-                                <option value="manana">Mañana</option>
-                                <option value="tarde">Tarde</option>
-                                <option value="noche">Noche</option>
-                              </select>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="container">
-    <div id="map"></div>
+    <div class="container container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="margin-top: 10px;">
+                    <div id="map"></div>
+                    <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                            data-toggle="modal" data-target="#modalUnidad"><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
+                                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalUnidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title float pull-left" id="exampleModalLabel"><i class="fa fa-road"></i>&nbsp;&nbsp;Ruta 21</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class=" text-primary">
+                                <th>
+                                    Unidades
+                                </th>
+                                <th>
+
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-truck"></i> Unidad 01
+                                    </td>
+                                    <td>
+                                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                            data-toggle="modal" data-target="#modalInformacion"><i class="fa fa-user"></i>&nbsp;&nbsp;Consultar Personal</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-truck"></i> Unidad 02
+                                    </td>
+                                    <td>
+                                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                            data-toggle="modal" data-target="#modalInformacion"><i class="fa fa-user"></i>&nbsp;&nbsp;Consultar Personal</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-truck"></i> Unidad 03
+                                    </td>
+                                    <td>
+                                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                            data-toggle="modal" data-target="#modalInformacion"><i class="fa fa-user"></i>&nbsp;&nbsp;Consultar Personal</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <div class="row">
+                        <button mat-raised-button type="button" class="btn btn-secondary pull-right" data-dismiss="modal"><i
+                                class="fa fa-times-circle-o"></i>&nbsp;&nbsp;Cerrar</button>
+                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal Informacion Unidad-->
+    <div class="modal fade" id="modalInformacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title float pull-left" id="exampleModalLabel"><i class="fa fa-truck"></i>&nbsp;&nbsp;Unidad 01</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label style="font-size: 16px;"><strong>Personal Asignado</strong></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="height: 80px;"></div>
+                        <div class="col-md-4" style="height: 80px;"></div>
+                        <div class="col-md-4" style="height: 80px;"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label>Nombre: Alexis</label><br>
+                            <label>Apellido: Chavez</label><br>
+                            <label>DNI: 32145678</label><br>
+                            <label>Telefono: 996812212</label><br>
+                            <label>Rol: Chofer</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Nombre: Juan Jose</label>
+                            <label>Apellido: Ramos Gonzales</label>
+                            <label>DNI: 66589742</label><br>
+                            <label>Telefono: 950150330</label><br>
+                            <label>Rol: Recolector</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Nombre: Luis Enrique</label>
+                            <label>Apellido: Condori Quispe</label>
+                            <label>DNI: 24586345</label><br>
+                            <label>Telefono: 982228548</label><br>
+                            <label>Rol: Recolector</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <div class="row">
+                        <button mat-raised-button type="button" class="btn btn-secondary pull-right" data-dismiss="modal"><i
+                                class="fa fa-times-circle-o"></i>&nbsp;&nbsp;Cerrar</button>
+                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
 </div>

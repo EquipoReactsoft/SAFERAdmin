@@ -10,7 +10,8 @@
                                 <p class="card-category">Turno: Mañana</p>
                             </div>
                             <div class="col-md-6">
-                                <p class="card-category float pull-left" style="padding-top: 25px;">Horario:</p>
+                                <p class="card-category float pull-left" style="padding-top: 25px;">Horario: 8:00 AM -
+                                    12:30 PM</p>
                             </div>
                         </div>
                     </div>
@@ -70,7 +71,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title float pull-left" id="exampleModalLabel"><i class="fa fa-truck"></i>&nbsp;&nbsp;Consultar 
+                    <h5 class="modal-title float pull-left" id="exampleModalLabel"><i class="fa fa-truck"></i>&nbsp;&nbsp;Consultar
                         Unidades</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -81,9 +82,6 @@
                         <table class="table table-hover">
                             <thead class=" text-primary">
                                 <th>
-                                    Ruta
-                                </th>
-                                <th>
                                     Unidades
                                 </th>
                                 <th>
@@ -93,51 +91,101 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        Ruta 01
-                                    </td>
-                                    <td>
                                         <i class="fa fa-truck"></i> Unidad 01
                                     </td>
                                     <td>
                                         <button mat-raised-button type="submit" class="btn btn-danger pull-left"
-                                            data-toggle="modal" data-target=""><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
+                                            data-toggle="modal" data-target="#modalInformacion"><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        Ruta 01
-                                    </td>
                                     <td>
                                         <i class="fa fa-truck"></i> Unidad 02
                                     </td>
                                     <td>
                                         <button mat-raised-button type="submit" class="btn btn-danger pull-left"
-                                            data-toggle="modal" data-target=""><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
+                                            data-toggle="modal" data-target="#modalInformacion"><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        Ruta 01
-                                    </td>
                                     <td>
                                         <i class="fa fa-truck"></i> Unidad 03
                                     </td>
                                     <td>
                                         <button mat-raised-button type="submit" class="btn btn-danger pull-left"
-                                            data-toggle="modal" data-target=""><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
+                                            data-toggle="modal" data-target="#modalInformacion"><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                     <div class="row">
                         <button mat-raised-button type="button" class="btn btn-secondary pull-right" data-dismiss="modal"><i
                                 class="fa fa-times-circle-o"></i>&nbsp;&nbsp;Cerrar</button>
                         <button mat-raised-button type="submit" class="btn btn-danger pull-left"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar</button>
                     </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal Informacion Unidad-->
+    <div class="modal fade" id="modalInformacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title float pull-left" id="exampleModalLabel"><i class="fa fa-info"></i>&nbsp;&nbsp;Informacion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label style="font-size: 16px;"><strong>Detalles de la Unidad</strong></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            
+                        </div>
+                        <div class="col-md-5">
+                            <label>Tipo: Camion Compactador</label>
+                            <label>Placa: WGP 599</label>
+                            <label>Marca: Mercedes Benz</label>
+                        </div>
+                        <div class="col-md-5">
+                            <label>Año: 2008</label>
+                            <label>Estado: Operativo</label>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                    <div class="row">
+                        <label style="font-size: 16px;"><strong>Ruta: Ruta 01</strong></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Inicio: 8:00 am</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Finalizacion: 12:30 pm</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Tiempo aprox. (Ruta): 3 h / 20 m</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <div class="row">
+                        <button mat-raised-button type="button" class="btn btn-secondary pull-right" data-dismiss="modal"><i
+                                class="fa fa-times-circle-o"></i>&nbsp;&nbsp;Cerrar</button>
+                        <button mat-raised-button type="submit" class="btn btn-danger pull-left"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar</button>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>

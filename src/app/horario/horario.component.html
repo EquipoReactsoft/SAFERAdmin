@@ -11,15 +11,16 @@
                         <form>
                             <div class="row">
                                 <div class="col-md-3">
-                                <label for="selec_turno" style="
-                                padding-top: 12px;">Seleccione un Turno:</label>
+                                    <label for="selec_turno" style="
+                                padding-top: 12px;">Seleccione
+                                        un Turno:</label>
                                 </div>
                                 <div class="col-md-9">
-                                <select name="cboTurno" class="form-control">
-                                    <option value="manana">Mañana</option>
-                                    <option value="tarde">Tarde</option>
-                                    <option value="noche">Noche</option>
-                                </select>
+                                    <select name="cboTurno" class="form-control">
+                                        <option value="manana">Mañana</option>
+                                        <option value="tarde">Tarde</option>
+                                        <option value="noche">Noche</option>
+                                    </select>
                                 </div>
                             </div>
                         </form>
@@ -51,6 +52,9 @@
                                     <th>
                                         Días
                                     </th>
+                                    <th>
+
+                                    </th>
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -63,6 +67,11 @@
                                         <td>
                                             Lunes - Sabados
                                         </td>
+                                        <td>
+                                            <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                                (click)="submit();"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Consultar
+                                                Horario</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -74,6 +83,11 @@
                                         <td>
                                             Lunes - Sabados
                                         </td>
+                                        <td>
+                                            <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                                (click)="submit();"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Consultar
+                                                Horario</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -84,6 +98,11 @@
                                         </td>
                                         <td>
                                             Lunes - Sabados
+                                        </td>
+                                        <td>
+                                            <button mat-raised-button type="submit" class="btn btn-danger pull-left"
+                                                (click)="submit();"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Consultar
+                                                Horario</button>
                                         </td>
                                     </tr>
                                 </tbody>
