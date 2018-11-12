@@ -1,4 +1,4 @@
-export class Login {
-    usuarios: String;
-    password: String;
+export interface Login {
+    usuario?: String;
+    password?: String;
 }
