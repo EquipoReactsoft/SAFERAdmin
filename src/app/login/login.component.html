@@ -6,26 +6,23 @@
               <img class="img" src="../assets/img/LOGO_6.svg" />
             </h1>
              <label class="myLabel"><strong>SAFER</strong></label>
-            <form name="loginform" id="loginform" (ngSubmit)="submit();">
+            <form name="loginform" id="loginform" [formGroup]="forma" (ngSubmit)="singIn()">
                 <p>
                     <label for="user_login">Usuario</label>
-                    <input type="text" id="txtUsuario" class="form-control" placeholder="Ingresar usuario"/>
+                    <input formControlName="usuario" type="text" id="txtUsuario" class="form-control" placeholder="Ingresar usuario"/>
                 </p>
                 <p>
                     <label for="user_pass">Contraseña</label>
-                    <input type="password" id="txtContrasena" class="form-control" placeholder="Ingresar Contraseña"/>
+                    <input formControlName="password" type="password" id="txtContrasena" class="form-control" placeholder="Ingresar Contraseña"/>
                 </p>
                 <p class="submit">
-                    <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block" value="Acceder"/>
+                    <!-- <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block" value="Acceder"/> -->
+                    <button [disabled]="!forma.valid" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block">Acceder</button>
                 </p>
             </form>
         </div>
     </div>
   </div>
-  <p>{{loginex}}</p>
-  <div *ngIf="!loginex[0]">
-<link rel="stylesheet" href="">
-    </div>
   <div >
       <footer class="footer ">
           <div class="container-fluid">

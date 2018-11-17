@@ -23,6 +23,9 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginComponent } from './login/login.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'environments/environment';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 @NgModule({
   imports: [
@@ -34,7 +37,9 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    })
+    }),
+    AngularFireModule.initializeApp(environment.firebaseConfig, 'SAFERAdmin'),
+    AngularFirestoreModule
   ],
   declarations: [
     AppComponent,
