@@ -1,8 +1,8 @@
+import { Usuario } from './../Models/usuario';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Login } from 'app/Models/login';
 import { LoginService } from 'app/Services/login/login.service';
-import { FormGroup, Validators, FormControl } from '@angular/forms';
+import { FormGroup, Validators, FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,34 +11,33 @@ import { FormGroup, Validators, FormControl } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  forma: FormGroup;
+  formLogin: FormGroup;
 
   constructor(public router: Router, private loginService: LoginService) { }
 
   ngOnInit() {
-    this.loginService.getLogin().subscribe(resp => {
-      console.log(resp);
-    });
-
+    this.setForm();
   }
 
   singIn() {
-    if (this.forma.invalid) {
-      return;
-    }
-    this.loginService.getLogin(this.forma.value).subscribe(response => {
-      if (response.valid) {
-        this.router.navigate(['/horario']);
-        this.router.navigate(['/dashboard']);
-      }
-    });
+    // if (this.forma.valid ) {
+    //   console.log('Heree');
+    //   return;
+    // } else {
+    //   console.log('bach');
+    // }
+    // this.loginService.singInService().subscribe(response => {
+    //   if (response) {
+    //     this.router.navigate(['/horario']);
+    //   }
+    // });
+    console.log(this.formLogin);
   }
 
   setForm() {
-    this.forma = new FormGroup({
-      usuario: new FormControl(Validators.required),
-      password: new FormControl(Validators.required)
+    this.formLogin = new FormGroup({
+      username: new FormControl(),
+      password: new FormControl()
     });
   }
-
 }

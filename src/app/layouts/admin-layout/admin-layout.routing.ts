@@ -1,3 +1,4 @@
+import { DashboardRealTimeComponent } from './../../dashboard-real-time/dashboard-real-time.component';
 import { Routes } from '@angular/router';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
@@ -64,7 +65,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'horario',        component: HorarioComponent },
-    { path: 'personal',        component: PersonalComponent },
-    { path: 'incidencia',        component: IncidenciaComponent },
-    { path: 'horario-ruta',        component: HorarioRutaComponent }
+    { path: 'personal',       component: PersonalComponent },
+    { path: 'incidencia',     component: IncidenciaComponent },
+    { path: 'horario-ruta',   component: HorarioRutaComponent },
+    { path: 'dashboard-real-time', component: DashboardRealTimeComponent }
 ];

@@ -1,3 +1,5 @@
+import { element } from 'protractor';
+import { Usuario } from './../../Models/usuario';
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { Login } from 'app/Models/login';
@@ -9,18 +11,24 @@ import { Observable } from 'rxjs';
 export class LoginService {
 
   loginCollection: AngularFirestoreCollection<Login>;
-  login: Observable<Login[]>;
+  usuario: Usuario[];
   loginDoc: AngularFirestoreDocument<Login>;
 
   constructor(public firebase: AngularFirestore) {
-    this.login = firebase.collection('Login').valueChanges();
+    firebase.collection<Usuario>('usuarios').valueChanges().subscribe((res) => {
+        if (res) {
+          this.usuario = res;
+        }
+    });
   }
 
-  getLogin(usuario: any) {
-    this.login.forEach(element => {
-      // TODO: Validar si el usuario existe en la firebase
+  singInService(user: String, pass: String): Boolean {
+    this.usuario.forEach(item => {
+        if (item.name === user  && item.password === pass) {
+          return true;
+        }
     });
-    return this.login;
+    return false;
   }
 
 }

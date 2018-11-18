@@ -2,24 +2,17 @@ import { Component, OnInit } from '@angular/core';
 
 declare const google: any;
 
-interface Marker {
-lat: number;
-lng: number;
-label?: string;
-draggable?: boolean;
-}
 @Component({
-  selector: 'app-maps',
-  templateUrl: './maps.component.html',
-  styleUrls: ['./maps.component.css']
+  selector: 'app-dashboard-real-time',
+  templateUrl: './dashboard-real-time.component.html',
+  styleUrls: ['./dashboard-real-time.component.scss']
 })
-export class MapsComponent implements OnInit {
+export class DashboardRealTimeComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-
-    const myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+    const myLatlng = new google.maps.LatLng(-12.1633, -76.9636);
     const mapOptions = {
         zoom: 13,
         center: myLatlng,
@@ -121,5 +114,4 @@ export class MapsComponent implements OnInit {
     // To add the marker to the map, call setMap();
     marker.setMap(map);
   }
-
 }

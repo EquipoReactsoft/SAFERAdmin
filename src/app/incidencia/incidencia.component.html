@@ -1,296 +1,337 @@
 <div class="container">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card" style="margin-top: 100px;">
-                    <div class="card-header card-header-danger">
-                        <h4 class="card-title">Incidencias</h4>
-                        <p class="card-category">Filtros</p>
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <label for="selec_zona" style="
-                                padding-top: 12px;">Zona:</label>
-                                </div>
-                                <div class="col-md-3">
-                                    <select name="cboZona" class="form-control">
-                                        <option value="">Pamplona Alta</option>
-                                        <option value="">Pamplona Baja</option>
-                                        <option value="">Zona Urbana - Cercado</option>
-                                        <option value="">Maria Auxiliadora</option>
-                                        <option value="">Pampas de San Juan</option>
-                                        <option value="">Panamericana Sur</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-1">
-                                    <label for="selec_turno" style="
-                              padding-top: 12px;">Turno:</label>
-                                </div>
-                                <div class="col-md-3">
-                                    <select name="cboTurno" class="form-control">
-                                        <option value="manana">Mañana</option>
-                                        <option value="tarde">Tarde</option>
-                                        <option value="noche">Noche</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-1">
-                                    <label for="selec_lugar" style="
-                              padding-top: 12px;">Lugar:</label>
-                                </div>
-                                <div class="col-md-3">
-                                    <select name="cboLugar" class="form-control">
-                                        <option value="">San Juanito</option>
-                                        <option value="">Villa Solidaridad 1</option>
-                                        <option value="">Ciudad de Dios</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="clearfix"></div>
-                            <div class="clearfix"></div>
-                            <div class="clearfix"></div>
-                            <div class="clearfix"></div>
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <label for="selec_turno" style="
-                                    padding-top: 12px;">Accion:</label>
-                                </div>
-                                <div class="col-md-3">
-                                    <input type="text" id="" class="form-control" />
-                                </div>
-                                <div class="col-md-1">
-                                    <label for="selec_turno" style="
-                              padding-top: 2px;">Fecha
-                                        Inicio:</label>
-                                </div>
-                                <div class="col-md-3">
-                                    <input type="date" id="" class="form-control" />
-                                </div>
-                                <div class="col-md-1">
-                                    <label for="selec_turno" style="
-                              padding-top: 2px;">Fecha
-                                        Fin:</label>
-                                </div>
-                                <div class="col-md-3">
-                                    <input type="date" id="" class="form-control" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6" style="padding-top: 10px;">
-                                    <button mat-raised-button type="submit" class="btn btn-danger pull-left"><i class="fa fa-search"></i>&nbsp;&nbsp;Buscar</button>
-                                </div>
-                                <div class="col-md-6" style="padding-top: 10px;">
-                                    <button mat-raised-button type="submit" class="btn btn-danger pull-right"
-                                        data-toggle="modal" data-target="#modalReporte"><i class="fa fa-file-text"></i>&nbsp;&nbsp;Reporte</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card" style="margin-top: 100px;">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title">Incidencias</h4>
+            <p class="card-category">Filtros</p>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col-md-1">
+                  <label
+                    for="selec_zona"
+                    style="
+                                padding-top: 12px;"
+                    >Zona:</label
+                  >
                 </div>
-            </div>
+                <div class="col-md-3">
+                  <select name="cboZona" class="form-control">
+                    <option value="">Pamplona Alta</option>
+                    <option value="">Pamplona Baja</option>
+                    <option value="">Zona Urbana - Cercado</option>
+                    <option value="">Maria Auxiliadora</option>
+                    <option value="">Pampas de San Juan</option>
+                    <option value="">Panamericana Sur</option>
+                  </select>
+                </div>
+                <div class="col-md-1">
+                  <label
+                    for="selec_turno"
+                    style="
+                              padding-top: 12px;"
+                    >Turno:</label
+                  >
+                </div>
+                <div class="col-md-3">
+                  <select name="cboTurno" class="form-control">
+                    <option value="manana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                  </select>
+                </div>
+                <div class="col-md-1">
+                  <label
+                    for="selec_lugar"
+                    style="
+                              padding-top: 12px;"
+                    >Lugar:</label
+                  >
+                </div>
+                <div class="col-md-3">
+                  <select name="cboLugar" class="form-control">
+                    <option value="">San Juanito</option>
+                    <option value="">Villa Solidaridad 1</option>
+                    <option value="">Ciudad de Dios</option>
+                  </select>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="clearfix"></div>
+              <div class="clearfix"></div>
+              <div class="clearfix"></div>
+              <div class="clearfix"></div>
+              <div class="row">
+                <div class="col-md-1">
+                  <label
+                    for="selec_turno"
+                    style="
+                                    padding-top: 12px;"
+                    >Accion:</label
+                  >
+                </div>
+                <div class="col-md-3">
+                  <input type="text" id="" class="form-control" />
+                </div>
+                <div class="col-md-1">
+                  <label
+                    for="selec_turno"
+                    style="
+                              padding-top: 2px;"
+                    >Fecha Inicio:</label
+                  >
+                </div>
+                <div class="col-md-3">
+                  <input type="date" id="" class="form-control" />
+                </div>
+                <div class="col-md-1">
+                  <label
+                    for="selec_turno"
+                    style="
+                              padding-top: 2px;"
+                    >Fecha Fin:</label
+                  >
+                </div>
+                <div class="col-md-3">
+                  <input type="date" id="" class="form-control" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6" style="padding-top: 10px;">
+                  <button
+                    mat-raised-button
+                    type="submit"
+                    class="btn btn-danger pull-left"
+                  >
+                    <i class="fa fa-search"></i>&nbsp;&nbsp;Buscar
+                  </button>
+                </div>
+                <div class="col-md-6" style="padding-top: 10px;">
+                  <button
+                    mat-raised-button
+                    type="submit"
+                    class="btn btn-danger pull-right"
+                    data-toggle="modal"
+                    data-target="#modalReporte"
+                  >
+                    <i class="fa fa-file-text"></i>&nbsp;&nbsp;Reporte
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="container">
-    <div class="container-fluid">
-        <div class="row">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card" style="margin-top: 10px;">
+          <div class="card-header card-header-danger">
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="card-title ">Incidencias</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead class=" text-primary">
+                  <th>Fecha</th>
+                  <th>Lugar</th>
+                  <th>Zona</th>
+                  <th>Comentario</th>
+                  <th>Estado</th>
+                  <th>Foto</th>
+                  <th></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10/04/2018</td>
+                    <td>Los Angeles</td>
+                    <td>Pamplona Alta</td>
+                    <td>
+                      Una persona se encuentra contaminando...
+                    </td>
+                    <td>Reportado</td>
+                    <td></td>
+                    <td>
+                      <button
+                        mat-raised-button
+                        type="submit"
+                        class="btn btn-danger pull-right"
+                        data-toggle="modal"
+                        data-target=""
+                      >
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;Detalle
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>23/04/2018</td>
+                    <td>San Juanito</td>
+                    <td>Pamplona Baja</td>
+                    <td>Ahy una acumulacion de basura...</td>
+                    <td>Verificado</td>
+                    <td></td>
+                    <td>
+                      <button
+                        mat-raised-button
+                        type="submit"
+                        class="btn btn-danger pull-right"
+                        data-toggle="modal"
+                        data-target=""
+                      >
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;Detalle
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12/05/2018</td>
+                    <td>Villa Solidaridad 1</td>
+                    <td>Maria Auxiliadora</td>
+                    <td>
+                      Una persona se encuentra acumulando residuos...
+                    </td>
+                    <td>Reportado</td>
+                    <td></td>
+                    <td>
+                      <button
+                        mat-raised-button
+                        type="submit"
+                        class="btn btn-danger pull-right"
+                        data-toggle="modal"
+                        data-target=""
+                      >
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;Detalle
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>16/06/2018</td>
+                    <td>Av. Miguel Iglesias</td>
+                    <td>Zona Urbana - Cercado</td>
+                    <td>
+                      Una persona se encuentra acumulando residuos...
+                    </td>
+                    <td>Atendido</td>
+                    <td></td>
+                    <td>
+                      <button
+                        mat-raised-button
+                        type="submit"
+                        class="btn btn-danger pull-right"
+                        data-toggle="modal"
+                        data-target=""
+                      >
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;Detalle
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>07/07/2018</td>
+                    <td>Cooperativa Valle Sharon</td>
+                    <td>Panpas de San Juan</td>
+                    <td>
+                      Una persona se encuentra acumulando residuos...
+                    </td>
+                    <td>Verificado</td>
+                    <td></td>
+                    <td>
+                      <button
+                        mat-raised-button
+                        type="submit"
+                        class="btn btn-danger pull-right"
+                        data-toggle="modal"
+                        data-target=""
+                      >
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;Detalle
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="modalReporte"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title float pull-left" id="exampleModalLabel">
+            <i class="fa fa-file-text"></i>&nbsp;&nbsp;Generar Reporte
+          </h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6"><label>Observacion:</label></div>
+            <div class="col-md-6">
+              <label>Fecha:</label> <label>&nbsp;&nbsp;10/11/2018</label>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-md-12">
-                <div class="card" style="margin-top: 10px;">
-                    <div class="card-header card-header-danger">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4 class="card-title ">Incidencias</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                                <thead class=" text-primary">
-                                    <th>
-                                        Fecha
-                                    </th>
-                                    <th>
-                                        Lugar
-                                    </th>
-                                    <th>
-                                        Zona
-                                    </th>
-                                    <th>
-                                        Comentario
-                                    </th>
-                                    <th>
-                                        Estado
-                                    </th>
-                                    <th>
-                                        Foto
-                                    </th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            10/04/2018
-                                        </td>
-                                        <td>
-                                            Los Angeles
-                                        </td>
-                                        <td>
-                                            Pamplona Alta
-                                        </td>
-                                        <td>
-                                            Una persona se encuentra
-                                            contaminando la via publica
-                                        </td>
-                                        <td>
-                                            Reportado
-                                        </td>
-                                        <td>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            23/04/2018
-                                        </td>
-                                        <td>
-                                            San Juanito
-                                        </td>
-                                        <td>
-                                            Pamplona Baja
-                                        </td>
-                                        <td>
-                                            Ahy una acumulacion de
-                                            basura en el paradero 23
-                                        </td>
-                                        <td>
-                                            Verificado
-                                        </td>
-                                        <td>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            12/05/2018
-                                        </td>
-                                        <td>
-                                            Villa Solidaridad 1
-                                        </td>
-                                        <td>
-                                            Maria Auxiliadora
-                                        </td>
-                                        <td>
-                                            Una persona se encuentra acumulando
-                                            residuos en la via publica
-                                        </td>
-                                        <td>
-                                            Reportado
-                                        </td>
-                                        <td>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            16/06/2018
-                                        </td>
-                                        <td>
-                                            Av. Miguel Iglesias
-                                        </td>
-                                        <td>
-                                            Zona Urbana - Cercado
-                                        </td>
-                                        <td>
-                                            Una persona se encuentra acumulando
-                                            residuos en la via publica
-                                        </td>
-                                        <td>
-                                            Atendido
-                                        </td>
-                                        <td>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            07/07/2018
-                                        </td>
-                                        <td>
-                                            Cooperativa Valle Sharon
-                                        </td>
-                                        <td>
-                                            Panpas de San Juan
-                                        </td>
-                                        <td>
-                                            Una persona se encuentra acumulando
-                                            residuos en la via publica
-                                        </td>
-                                        <td>
-                                            Verificado
-                                        </td>
-                                        <td>
-
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+              <textarea
+                name="message"
+                rows="5"
+                cols="55"
+                class="form-control"
+                placeholder="Por favor Ingrese sus observaciones..."
+              ></textarea>
             </div>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="modalReporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title float pull-left" id="exampleModalLabel"><i class="fa fa-file-text"></i>&nbsp;&nbsp;Generar
-                        Reporte</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>Observacion:</label>
-                        </div>
-                        <div class="col-md-6">
-                            <label>Fecha:</label>
-                            <label>&nbsp;&nbsp;10/11/2018</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <textarea name="message" rows="5" cols="55" class="form-control" placeholder="Por favor Ingrese sus observaciones..."></textarea>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <label>Formato:</label>
-                        </div>
-                        <div class="col-md-3">
-                            <button mat-raised-button type="submit" class="btn btn-danger pull-left" style="background-color: darkgreen"><i
-                                    class="fa fa-file-excel-o"></i>&nbsp;&nbsp;EXCEL</button>
-                        </div>
-                        <div class="col-md-3">
-                            <button mat-raised-button type="submit" class="btn btn-danger pull-left" style="background-color: red"><i
-                                    class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;PDF</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="modal-footer">
-                        <div class="row">
-                            <button mat-raised-button type="button" class="btn btn-secondary pull-right" data-dismiss="modal"><i class="fa fa-times-circle-o"></i>&nbsp;&nbsp;Cerrar</button>
-                            <button mat-raised-button type="submit" class="btn btn-danger pull-left"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar</button>
-                        </div>
-                    </div> -->
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-md-3"><label>Formato:</label></div>
+            <div class="col-md-3">
+              <button
+                mat-raised-button
+                type="submit"
+                class="btn btn-danger pull-left"
+                style="background-color: darkgreen"
+              >
+                <i class="fa fa-file-excel-o"></i>&nbsp;&nbsp;EXCEL
+              </button>
             </div>
+            <div class="col-md-3">
+              <button
+                mat-raised-button
+                type="submit"
+                class="btn btn-danger pull-left"
+                style="background-color: red"
+              >
+                <i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;PDF
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

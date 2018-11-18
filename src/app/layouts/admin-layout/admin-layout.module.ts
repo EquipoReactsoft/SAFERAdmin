@@ -22,6 +22,7 @@ import { HorarioComponent } from 'app/horario/horario.component';
 import { PersonalComponent } from 'app/personal/personal.component';
 import { IncidenciaComponent } from 'app/incidencia/incidencia.component';
 import { HorarioRutaComponent } from 'app/horario-ruta/horario-ruta.component';
+import { DashboardRealTimeComponent } from 'app/dashboard-real-time/dashboard-real-time.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -44,7 +45,8 @@ import { HorarioRutaComponent } from 'app/horario-ruta/horario-ruta.component';
     HorarioComponent,
     PersonalComponent,
     IncidenciaComponent,
-    HorarioRutaComponent
+    HorarioRutaComponent,
+    DashboardRealTimeComponent
   ]
 })
 

@@ -6,25 +6,25 @@
               <img class="img" src="../assets/img/LOGO_6.svg" />
             </h1>
              <label class="myLabel"><strong>SAFER</strong></label>
-            <form name="loginform" id="loginform" [formGroup]="forma" (ngSubmit)="singIn()">
+            <form [formGroup]="formLogin" name="loginform" id="loginform" (ngSubmit)="singIn()">
                 <p>
                     <label for="user_login">Usuario</label>
-                    <input formControlName="usuario" type="text" id="txtUsuario" class="form-control" placeholder="Ingresar usuario"/>
+                    <input formControlName="username" type="text" id="txtUsuario" class="form-control" placeholder="Ingresar usuario" />
                 </p>
                 <p>
                     <label for="user_pass">Contraseña</label>
-                    <input formControlName="password" type="password" id="txtContrasena" class="form-control" placeholder="Ingresar Contraseña"/>
+                    <input formControlName="password" type="password" id="txtContrasena" class="form-control" placeholder="Ingresar Contraseña" />
                 </p>
                 <p class="submit">
                     <!-- <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block" value="Acceder"/> -->
-                    <button [disabled]="!forma.valid" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block">Acceder</button>
+                    <button [disabled]="forma.valid" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block">Acceder</button>
                 </p>
             </form>
         </div>
     </div>
   </div>
   <div >
-      <footer class="footer ">
+      <footer class="footer">
           <div class="container-fluid">
               <div class="copyright pull-right">
                   &copy; 
