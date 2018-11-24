@@ -16,23 +16,29 @@ export class LoginComponent implements OnInit {
   constructor(public router: Router, private loginService: LoginService) { }
 
   ngOnInit() {
-    this.setForm();
+    // this.setForm();
+    // this.LogIn();
   }
 
-  singIn() {
-    // if (this.forma.valid ) {
-    //   console.log('Heree');
-    //   return;
-    // } else {
-    //   console.log('bach');
-    // }
-    // this.loginService.singInService().subscribe(response => {
-    //   if (response) {
-    //     this.router.navigate(['/horario']);
-    //   }
-    // });
-    console.log(this.formLogin);
+  LogIn() {
+    console.log('ghkgjgfhjgf');
+    this.router.navigate(['/horario']);
   }
+
+  // singIn() {
+  //   if (this.forma.valid ) {
+  //     console.log('Heree');
+  //     return;
+  //   } else {
+  //     console.log('bach');
+  //   }
+  //   this.loginService.singInService().subscribe(response => {
+  //     if (response) {
+  //       this.router.navigate(['/horario']);
+  //     }
+  //   });
+  //   console.log(this.formLogin);
+  // }
 
   setForm() {
     this.formLogin = new FormGroup({

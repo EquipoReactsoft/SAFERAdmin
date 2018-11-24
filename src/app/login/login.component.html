@@ -6,7 +6,7 @@
               <img class="img" src="../assets/img/LOGO_6.svg" />
             </h1>
              <label class="myLabel"><strong>SAFER</strong></label>
-            <form [formGroup]="formLogin" name="loginform" id="loginform" (ngSubmit)="singIn()">
+            <form name="loginform" id="loginform" (ngSubmit)="LogIn()">
                 <p>
                     <label for="user_login">Usuario</label>
                     <input formControlName="username" type="text" id="txtUsuario" class="form-control" placeholder="Ingresar usuario" />
@@ -16,8 +16,8 @@
                     <input formControlName="password" type="password" id="txtContrasena" class="form-control" placeholder="Ingresar Contraseña" />
                 </p>
                 <p class="submit">
-                    <!-- <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block" value="Acceder"/> -->
-                    <button [disabled]="forma.valid" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block">Acceder</button>
+                    <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block" value="Acceder"/>
+                    <!-- <button [disabled]="forma.valid" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block">Acceder</button> -->
                 </p>
             </form>
         </div>
