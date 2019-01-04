@@ -1,3 +1,4 @@
+import { MapsComponent } from './../maps/maps.component';
 import { Component, OnInit } from '@angular/core';
 
 declare const google: any;
@@ -12,7 +13,7 @@ export class DashboardRealTimeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const myLatlng = new google.maps.LatLng(-12.1633, -76.9636);
+    const myLatlng = new google.maps.LatLng(-12.1397046, -76.9996628);
     const mapOptions = {
         zoom: 13,
         center: myLatlng,

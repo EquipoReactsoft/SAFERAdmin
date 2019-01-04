@@ -19,7 +19,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/dashboard-real-time', title: 'Dashboard',  icon: 'dashboard', class: '' },
     { path: '/horario', title: 'Horario',  icon: 'schedule', class: '' },
     { path: '/personal', title: 'Personal',  icon: 'person', class: '' },
-    { path: '/incidencia', title: 'Incidencias',  icon: 'warning', class: '' },
+    { path: '/incidencia', title: 'Reportes',  icon: 'warning', class: '' },
 
 ];
 

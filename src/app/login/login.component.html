@@ -6,17 +6,17 @@
               <img class="img" src="../assets/img/LOGO_6.svg" />
             </h1>
              <label class="myLabel"><strong>SAFER</strong></label>
-            <form name="loginform" id="loginform" (ngSubmit)="LogIn()">
+            <form name="loginform" id="loginform" #formLogin="ngForm" (submit)="onSubmitLogIn()">
                 <p>
-                    <label for="user_login">Usuario</label>
-                    <input formControlName="username" type="text" id="txtUsuario" class="form-control" placeholder="Ingresar usuario" />
+                    <label for="email">Usuario</label>
+                    <input [(ngModel)]="email" type="email" id="email" name="email" class="form-control" placeholder="Ingresar usuario" required>
                 </p>
                 <p>
-                    <label for="user_pass">Contraseña</label>
-                    <input formControlName="password" type="password" id="txtContrasena" class="form-control" placeholder="Ingresar Contraseña" />
+                    <label for="password">Contraseña</label>
+                    <input [(ngModel)]="password" type="password" id="password" name="password" class="form-control" placeholder="Ingresar Contraseña" required>
                 </p>
                 <p class="submit">
-                    <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block" value="Acceder"/>
+                    <input type="submit" name="acceder" id="acceder" class="btn btn-accent btn-block" value="Acceder"/>
                     <!-- <button [disabled]="forma.valid" name="wp-submit" id="wp-submit" class="btn btn-accent btn-block">Acceder</button> -->
                 </p>
             </form>
