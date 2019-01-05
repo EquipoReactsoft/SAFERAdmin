@@ -1,12 +1,12 @@
 <div class="container">
   <div class="container container-fluid">
     <div class="row">
-      <!-- <div class="col-md-3">
-          <div class="card" style="margin-top: 85px;">
+      <div class="col-md-3">
+          <div class="card" style="margin-top: 85px;width: 260px;">
               <div class="card-header card-header-danger">
                 <div class="row">
                   <div class="col-md-6">
-                    <h4 class="card-title">Vehiculo</h4>
+                    <h4 class="card-title">Unidades</h4>
                   </div>
                 </div>
               </div>
@@ -14,34 +14,22 @@
                 <div class="table-responsive">
                   <table class="table table-hover">
                     <tbody>
-                      <tr>
-                        <td>10/04/2018</td>
-                        <td>Los Angeles</td>
-                      </tr>
-                      <tr>
-                        <td>23/04/2018</td>
-                        <td>San Juanito</td>
-                      </tr>
-                      <tr>
-                        <td>12/05/2018</td>
-                        <td>Villa Solidaridad 1</td>
-                      </tr>
-                      <tr>
-                        <td>16/06/2018</td>
-                        <td>Av. Miguel Iglesias</td>
-                      </tr>
-                      <tr>
-                        <td>07/07/2018</td>
-                        <td>Cooperativa Valle Sharon</td>
+                      <tr *ngFor="let unit of units | async">
+                        <td class="col-sm-2 text-center">{{ unit.email }}</td>
+                        <td class="col-sm-1 text-center">
+                            <button mat-raised-button type="submit" class="btn btn-danger btn-xs" (click)="onShow(unit)" >
+                              <i class="fa fa-map-marker"></i>
+                            </button>
+                          </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
             </div> 
-      </div>-->
-      <div class="col-md-12">
-          <div id="map" ></div>
+      </div>
+      <div class="col-md-9">
+          <div id="map" style="width: 860px;"></div>
       </div>
     </div>
   </div>
@@ -49,27 +37,3 @@
 <!-- /**
      * The JavaScript code that creates the firebase map goes between the empty script tags below.
      */ -->
-<script>
-function makeInfoBox(controlDiv, map) {
-    // Set CSS for the control border.
-    var controlUI = document.createElement('div');
-    controlUI.style.boxShadow = 'rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px';
-    controlUI.style.backgroundColor = '#fff';
-    controlUI.style.border = '2px solid #fff';
-    controlUI.style.borderRadius = '2px';
-    controlUI.style.marginBottom = '22px';
-    controlUI.style.marginTop = '10px';
-    controlUI.style.textAlign = 'center';
-    controlDiv.appendChild(controlUI);
-
-    // Set CSS for the control interior.
-    var controlText = document.createElement('div');
-    controlText.style.color = 'rgb(25,25,25)';
-    controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
-    controlText.style.fontSize = '100%';
-    controlText.style.padding = '6px';
-    controlText.innerText = 'The map shows all clicks made in the last 10 minutes.';
-    controlUI.appendChild(controlText);
-  }
-  var firebase = new Firebase("https://safer-a75f0.firebaseio.com");
-</script>

@@ -4,3 +4,14 @@ map {
 .card .card-header-danger {
     background: #95D5A0;
 }
+.card .card-title, h4 {
+    color: #636363;
+}
+.card .card-category{
+    color: #747474;
+    font-size: 16px;
+}
+.btn.btn-danger:focus, .btn.btn-danger.focus, .btn.btn-danger:hover {
+    background-color: #d30909;
+    border-color: #ee3636;
+}
